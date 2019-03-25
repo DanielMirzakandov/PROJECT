@@ -19,11 +19,6 @@ namespace MVC5_proj.Controllers
             return View();
         }
 
-        public ActionResult aa()
-        {
-            return View();
-        }
-
         //saving data from DB to dal 
         [HttpPost]
         public ActionResult Send(Contact contact)
