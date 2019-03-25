@@ -187,6 +187,7 @@
     <Content Include="Views\Home\ShowContact.cshtml" />
     <Content Include="Views\Home\ShowAbout.cshtml" />
     <Content Include="Views\Home\ShowSignUp.cshtml" />
+    <Content Include="Views\Home\ShowSignIn.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

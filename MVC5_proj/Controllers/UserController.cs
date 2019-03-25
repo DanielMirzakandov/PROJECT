@@ -19,7 +19,26 @@ namespace MVC5_proj.Controllers
             return View();
         }
 
-        //saving data from DB to dal 
+        //SignIn
+        [HttpPost]
+        public ActionResult SignUp(Patient patient)
+        {
+            UserDal dal = new UserDal();
+            List<Patient> q = (from p in dal.patients where p.ID.Equals(p.ID) select p).ToList<Patient>();
+
+            if (q.Count() == 0)
+            {
+                dal.patients.Add(patient);//in Memorey adding
+                dal.SaveChanges();
+                TempData["yes"] = "Welcome to Health Care!";
+                return RedirectToAction("ShowSignUp", "Home");
+            }
+
+            TempData["no"] = "You already Have An Acoount here";
+            return RedirectToAction("ShowSignUp", "Home");
+        }
+
+        //Contact 
         [HttpPost]
         public ActionResult Send(Contact contact)
         {
@@ -41,22 +60,6 @@ namespace MVC5_proj.Controllers
             return RedirectToAction("ShowContact", "Home");
         }
 
-        [HttpPost]
-        public ActionResult Request(Request req)
-        {
-            UserDal dal = new UserDal();
-            List<User> q = (from u in dal.Users where u.ID.Equals(req.ID) select u).ToList<User>();
 
-            if (q.Count() > 0)
-            {
-                dal.Requests.Add(req);//in Memorey adding
-                dal.SaveChanges();
-                TempData["yes"] = "Thank you for contacting us – we will get back to you soon!";
-                return RedirectToAction("ShowHomePage", "Home");
-            }
-
-            TempData["no"] = "You Dont Have An Acoount here Please Register First";
-            return RedirectToAction("ShowHomePage", "Home");
-        }
     }
 }

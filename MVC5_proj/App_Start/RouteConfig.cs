@@ -16,6 +16,18 @@ namespace MVC5_proj
 
 
             routes.MapRoute(
+                name: "ShowSignIn",
+                url: "Home/ShowSignIn",
+                defaults: new { controller = "Home", action = "ShowSignIn", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
+                name: "SignUp",
+                url: "User/SignUp",
+                defaults: new { controller = "User", action = "SignUp", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
                 name: "ShowAbout",
                 url: "Home/ShowAbout",
                 defaults: new { controller = "Home", action = "ShowAbout", id = UrlParameter.Optional }
