@@ -141,6 +141,7 @@
     </Compile>
     <Compile Include="ModelBinders\UserBinder.cs" />
     <Compile Include="Models\Contact.cs" />
+    <Compile Include="Models\Doctor.cs" />
     <Compile Include="Models\Request.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="ModelView\UserViewModel.cs" />
@@ -157,6 +158,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="connections.config" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
