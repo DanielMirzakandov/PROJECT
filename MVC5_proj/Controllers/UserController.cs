@@ -19,7 +19,7 @@ namespace MVC5_proj.Controllers
             return View();
         }
 
-        public ActionResult Index()
+        public ActionResult aa()
         {
             return View();
         }
