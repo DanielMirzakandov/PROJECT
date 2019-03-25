@@ -140,6 +140,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="ModelBinders\UserBinder.cs" />
+    <Compile Include="Models\Patient.cs" />
     <Compile Include="Models\Contact.cs" />
     <Compile Include="Models\Doctor.cs" />
     <Compile Include="Models\Request.cs" />
