@@ -13,7 +13,7 @@ namespace MVC5_proj.Dal
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Contact>().ToTable("Contact");
-            modelBuilder.Entity<Request>().ToTable("Patient");
+            modelBuilder.Entity<Patient>().ToTable("Patient");
         }
 
         //property Collection  that returns us Dbset of obj User

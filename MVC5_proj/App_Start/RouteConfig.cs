@@ -45,6 +45,12 @@ namespace MVC5_proj
             );
 
             routes.MapRoute(
+                name: "Send",
+                url: "User/Send",
+                defaults: new { controller = "User", action = "Send", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
                 name: "Home",
                 url: "Home",
                 defaults: new { controller = "Home", action = "ShowHomePage", id = UrlParameter.Optional }

@@ -25,7 +25,7 @@ namespace MVC5_proj.Controllers
         {
             UserDal dal = new UserDal();
             List<Patient> q = (from p in dal.patients where p.ID.Equals(p.ID) select p).ToList<Patient>();
-
+            
             if (q.Count() == 0)
             {
                 dal.patients.Add(patient);//in Memorey adding
@@ -45,13 +45,13 @@ namespace MVC5_proj.Controllers
             UserDal dal = new UserDal();
 
             //searching a person from DB with query and saves in DB if found other wise returining with a msg
-            List<User> q = (from u in dal.Users where u.ID.Equals(contact.ID) select u).ToList<User>();
+            //List<Patient> q = (from u in dal.patients where u.ID.Equals(contact.ID) select u).ToList<Patient>();
 
-            if (q.Count() > 0)
+            if (true)
            {
                 dal.Contacts.Add(contact);//in Memorey adding
                 dal.SaveChanges();//adding to DB from Memorey
-                TempData["yes"] = "Thank you for contacting us – we will get back to you soon!";
+                TempData["yes"] = contact.ID+"Thank you for contacting us – we will get back to you soon!";
                 return RedirectToAction("ShowContact", "Home");
            }
 

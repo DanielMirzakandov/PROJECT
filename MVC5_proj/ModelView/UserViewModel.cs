@@ -13,8 +13,5 @@ namespace MVC5_proj.ModelView
         public List<User> Users { get; set; }
 
         public List<Contact> contacts { get; set; }
-
-        public List<Request> requests { get; set; }
-
     }
 }
