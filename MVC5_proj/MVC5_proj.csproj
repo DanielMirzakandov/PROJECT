@@ -141,6 +141,7 @@
     </Compile>
     <Compile Include="ModelBinders\UserBinder.cs" />
     <Compile Include="Models\Contact.cs" />
+    <Compile Include="Models\Doctor.cs" />
     <Compile Include="Models\Request.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="ModelView\UserViewModel.cs" />
