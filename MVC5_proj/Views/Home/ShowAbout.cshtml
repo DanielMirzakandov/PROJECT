@@ -1,0 +1,66 @@
+﻿@model MVC5_proj.ModelView.UserViewModel
+
+@{
+    ViewBag.Title = "ShowAbout";
+    Layout = "~/Views/Shared/_LayoutNav.cshtml";
+}
+
+<style>
+    img {
+        position: absolute;
+        left: -80px;
+        top: 0px;
+        z-index: -1;
+    }
+
+    h2 span {
+        color: white;
+        font: bold 24px/45px Helvetica, Sans-Serif;
+        letter-spacing: -1px;
+        background: rgb(0, 0, 0); /* fallback color */
+        background: rgba(0, 0, 0, 0.7);
+        padding: 10px;
+    }
+
+    p {
+        font-size: large;
+        font-weight: normal;
+    }
+
+    .back {
+        background: rgb(0, 0, 0); /* fallback color */
+        background: rgb(215, 188, 36);
+    }
+</style>
+
+<div class="">
+    <section class="get-info">
+        <div class="col-sm-6">
+            <div class="info-img">
+                <img src="https://www.artistsnetwork.com/wp-content/uploads/2017/11/events-test-image.png" alt="">
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <h1>A Community for the Artist</h1>                                                            <p>You find artists on every continent of the globe. You find artists in every country, city and town worldwide. In the United States alone there are 2.1 million artists putting their creative energies out there every hour of every day–and loving every minute of it. Artists like you, who strive to live artful lives and share your passions in ways both big and small every day.</p>
+        </div>
+    </section>
+    <div class="post_content">
+        <h2><span style="color: #3db8ea;">A Destination Just for You</span></h2>
+        <p style="color: #3db8ea;>If you’re picking up a paintbrush for the first time or preparing for a solo exhibition…</pstyle=" color:>
+        <p>If you are a creative looking for nonstop access to prompts to jumpstart your making process or traditional painting and drawing techniques to bolster your set of skills…</p>
+        <p>If you are part of the art curious tribe or an appreciator who relishes all the rich historic, creative and cultural intersections that art provides…</p>
+        <p>Artists Network is built for you.</p>
+        <p>Artist Network is with you every step of your art journey. Come have fun with us! Come make art with us! It is a light-hearted, energizing adventure that we want to embark on with you!</p>
+    </div>                                        <section class="get-info">
+        <div class="col-sm-6">
+            <div class="info-img">
+                <img src="https://www.artistsnetwork.com/wp-content/uploads/2017/11/GettyImages-639395746.jpg" alt="">
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <h1>An Artful Mission</h1>                                                            <p>Our mission is to <strong>empower</strong> artists with the techniques, knowledge, ideas and inspirations that help <strong>ignite their visions</strong> and bring them to <strong>life</strong>. We put those <strong>possibilities in your hands</strong> through compelling print publications, online media, video education and real-time experiences.</p>
+
+        </div>
+    </section>
+</div>
+
