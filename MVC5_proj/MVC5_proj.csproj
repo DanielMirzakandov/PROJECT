@@ -186,11 +186,11 @@
     <Content Include="Views\Home\ShowHomePage.cshtml" />
     <Content Include="Views\Home\ShowContact.cshtml" />
     <Content Include="Views\Home\ShowAbout.cshtml" />
-    <Content Include="Views\Home\ShowSignUp.cshtml" />
+    <Content Include="Views\Home\SignUp.cshtml" />
+    <Content Include="Views\User\aa.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\User\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

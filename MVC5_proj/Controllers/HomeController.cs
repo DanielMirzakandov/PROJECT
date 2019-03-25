@@ -33,9 +33,8 @@ namespace MVC5_proj.Controllers
             return View();
         }
 
-        public ActionResult ShowSignUp()
+        public ActionResult SignUp()
         {
-
             return View();
         }
     }
