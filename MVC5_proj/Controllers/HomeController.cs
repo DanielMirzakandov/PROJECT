@@ -9,7 +9,6 @@ using System.Web.Mvc;
 
 namespace MVC5_proj.Controllers
 {
-    //bliat
     public class HomeController : Controller
     {
         public ActionResult Index()
