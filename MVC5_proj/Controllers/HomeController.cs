@@ -9,7 +9,7 @@ using System.Web.Mvc;
 
 namespace MVC5_proj.Controllers
 {
-    //bliat
+    
     public class HomeController : Controller
     {
         public ActionResult Index()
@@ -33,5 +33,10 @@ namespace MVC5_proj.Controllers
             return View();
         }
 
+        public ActionResult ShowSignUp()
+        {
+
+            return View();
+        }
     }
 }

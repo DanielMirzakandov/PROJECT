@@ -14,11 +14,13 @@ namespace MVC5_proj
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
             routes.IgnoreRoute("{resource}.config");
 
+
             routes.MapRoute(
-                name: "Request",
-                url: "User/Request",
-                defaults: new { controller = "User", action = "Request", id = UrlParameter.Optional }
+                name: "ShowSignUp",
+                url: "Home/ShowSignUp",
+                defaults: new { controller = "Home", action = "ShowSignUp", id = UrlParameter.Optional }
             );
+
 
             routes.MapRoute(
                 name: "ShowAbout",
@@ -32,13 +34,6 @@ namespace MVC5_proj
                 defaults: new { controller = "Home", action = "ShowContact", id = UrlParameter.Optional }
             );
 
-            routes.MapRoute(
-                name: "Send",
-                url: "User/Send",
-                defaults: new { controller = "User", action = "Send", id = UrlParameter.Optional }
-            );
-
-            
             routes.MapRoute(
                 name: "Home",
                 url: "Home",

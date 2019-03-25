@@ -183,7 +183,7 @@
     <Content Include="Views\Home\ShowHomePage.cshtml" />
     <Content Include="Views\Home\ShowContact.cshtml" />
     <Content Include="Views\Home\ShowAbout.cshtml" />
-    <Content Include="Views\Shared\_LayoutNav.cshtml" />
+    <Content Include="Views\Home\ShowSignUp.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
