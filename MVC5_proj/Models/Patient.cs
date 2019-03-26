@@ -13,9 +13,9 @@ namespace MVC5_proj.Models
 
         public string lname { get; set; }
 
-        public string height { get; set; }
-
         public string weight { get; set; }
+
+        public string height { get; set; }
 
         public string email { get; set; }
 

@@ -37,6 +37,15 @@
                     <li>@Html.ActionLink("Sing Up", "ShowSignUp", "Home")</li>
                     <li>@Html.ActionLink("Sing In", "ShowSignIn", "Home")</li>
                 </ul>
+                @if (Session["Doctor"] != null && Session["Doctor"].Equals("Hello Dr."))
+                {
+                    <div class="pull-right" style="padding-top: 10px; font-size:large;"><kbd>@Session["Admin"]</kbd></div>
+
+                }
+                else
+                {
+                    <div class="pull-right" style="padding-top: 10px; font-size:large;"><kbd>@Session["Patient"]</kbd></div>
+                }
             </div>
         </div>
     </div>
